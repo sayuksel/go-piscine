@@ -7,4 +7,9 @@ func main() {
 		z01.PrintRune(i)
 	}
 	z01.PrintRune('\n')
+
+	IsNegative(1)
+	IsNegative(0)
+	IsNegative(-1)
+
 }

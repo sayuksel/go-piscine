@@ -1,4 +1,4 @@
-package main
+package piscine
 
 import "github.com/01-edu/z01"
 
@@ -11,8 +11,9 @@ func IsNegative(num int) {
 	z01.PrintRune('\n')
 }
 
-func main() {
+/*func main() {
 	IsNegative(1)
 	IsNegative(0)
 	IsNegative(-1)
 }
+*/
