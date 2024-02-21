@@ -13,10 +13,10 @@ package piscine
 */
 
 func BasicAtoi(s string) int {
-	result := 0 
+	result := 0
 
 	for i := 0; i < len(s); i++ {
-		result = (result * 10) + int(s[i] - 48)
+		result = (result * 10) + int(s[i]-48)
 	}
 	return result
 }
