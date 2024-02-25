@@ -20,7 +20,7 @@ func IterativeFactorial(nb int) int {
 
 	if nb < 0 {
 		return 0
-	} else  if nb == 0 {
+	} else if nb == 0 {
 		return 1
 	} else {
 		for i := nb; i > 0; i-- {
