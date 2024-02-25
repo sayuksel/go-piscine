@@ -23,7 +23,7 @@ func IterativeFactorial(nb int) int {
 	} else if nb == 0 {
 		return 1
 	} else {
-		for i := 1; i < nb; i++ {
+		for i := 1; i <= nb; i++ {
 			result *= i
 		}
 	}
