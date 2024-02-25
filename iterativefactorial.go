@@ -9,7 +9,6 @@ func IterativeFactorial(nb int) int {
 		for i := nb; i > 0; i-- {
 			result *= i
 		}
-	
 	}
 	return result
-} 
+}
