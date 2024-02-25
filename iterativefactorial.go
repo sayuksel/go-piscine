@@ -1,0 +1,3 @@
+package piscine
+
+func IterativeFactorial()
