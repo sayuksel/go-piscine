@@ -4,9 +4,9 @@ func AlphaCount(s string) int {
 	alpha := 0
 
 	for _, ch := range s {
-		if ch >= 'a' && ch <= 'z' {
+		if ch >= 97 && ch <= 122 {
 			alpha++
-		} else if ch >= 'A' && ch <= 'Z' {
+		} else if ch >= 65 && ch <= 90 {
 			alpha++
 		}
 	}
