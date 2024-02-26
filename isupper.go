@@ -13,5 +13,4 @@ func IsUpper(s string) bool {
 	} else {
 		return false
 	}
-
 }
