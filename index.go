@@ -1,7 +1,5 @@
 package piscine
 
-import "fmt"
-
 // func Index(s string, toFind string) int {
 
 // arr := len(toFind)
@@ -49,7 +47,6 @@ import "fmt"
 
 func Index(s, toFind string) int {
 	for i := 0; i <= len(s)-len(toFind); i++ {
-		fmt.Printf("s[i : i+len(toFind)]: %v\n", s[i:i+len(toFind)])
 		if s[i:i+len(toFind)] == toFind {
 			return i
 		}
