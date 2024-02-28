@@ -28,7 +28,7 @@ func Capitalize(s string) string {
 				result += string(char)
 			} else {
 				wordStart = true
-
+				result += string(char)
 			}
 		}
 	}
