@@ -6,15 +6,19 @@ func Capitalize(s string) string {
 
 	for _, v := range s {
 		if IsFirst {
+			IsFirst = false
 			if v >= 'a' && v <= 'z' {
 				result += string(v-32)
 			} else {
 				result += string(v)
 			}
-			IsFirst = false
 		} else {
-			result += string(v)
-		}	
+			if v >= 'A' && v <= 'Z' {
+				result += string(v+32)
+			} else {
+				result += string(v)
+			}
+		}
 	}
 	return result
 }
