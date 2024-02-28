@@ -6,9 +6,5 @@ import (
 )
 
 func main() {
-	piscine.PrintNbrInOrder(312)
-	fmt.Println(" ")
-	piscine.PrintNbrInOrder(0)
-	fmt.Println(" ")
-	piscine.PrintNbrInOrder(321)
+	fmt.Println(piscine.Capitalize("fgmttLu=O^^'0"))
 }
