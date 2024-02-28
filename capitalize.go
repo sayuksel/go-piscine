@@ -22,17 +22,13 @@ func Capitalize(s string) string {
 				}
 			}
 		} else {
-			if v >= 'A' && v <= 'Z' {
-				result += string(v+32)
-<<<<<<< HEAD
-			} else if v >= '0' && v <= '9'{
-				result += string(v)
+			if char >= 'A' && char <= 'Z' {
+				result += string(char+32)
+			} else if char >= '0' && char <= '9'{
+				result += string(char)
 			} else {
-				IsFirst = true
-=======
-			} else {
->>>>>>> f5489433b08036113dd6f56e0ba170a8ba3bfd77
-				result += string(v)
+				wordStart = true
+				result += string(char)
 			}
 		}
 	}
