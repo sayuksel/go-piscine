@@ -9,11 +9,17 @@ import (
 func main() {
 	input := os.Args
 
-	line := []rune(input[0])
+	full := input[0]
+	trimmed := full[2:]
 
-	for i := 0; i < len(line); i++ {
-		if line[i] != '.' && line[i] != '/' {
-			z01.PrintRune(line[i])
-		}
+	for _, v := range trimmed {
+		z01.PrintRune(v)
 	}
+	// line := []rune(input[0])
+
+	// for i := 0; i < len(line); i++ {
+	// 	if line[i] != '.' && line[i] != '/' {
+	// 		z01.PrintRune(line[i])
+	// 	}
+	// }
 }
