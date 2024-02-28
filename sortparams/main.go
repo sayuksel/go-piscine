@@ -13,7 +13,6 @@ func Print(s string) {
 }
 
 func main() {
-
 	input := os.Args[1:]
 
 	for i := 0; i <= len(input)-1; i++ {
