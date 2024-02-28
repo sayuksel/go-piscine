@@ -1,7 +1,6 @@
 package piscine
 
 func Capitalize(s string) string {
-
 	var result string
 	wordStart := true
 
