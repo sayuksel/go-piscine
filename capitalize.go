@@ -21,7 +21,6 @@ func Capitalize(s string) string {
 			} else {
 				IsFirst = true
 // =======
-			} else {
 // >>>>>>> f5489433b08036113dd6f56e0ba170a8ba3bfd77
 				result += string(v)
 			}
