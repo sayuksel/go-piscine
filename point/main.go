@@ -28,9 +28,9 @@ func main() {
 		case 3:
 			a = ' '
 		case 4:
-			a = '4'
+			a = 52
 		case 5:
-			a = '2'
+			a = 50
 		case 6:
 			a = ','
 		case 7:
@@ -44,9 +44,9 @@ func main() {
 		case 11:
 			a = ' '
 		case 12:
-			a = '2'
+			a = 50
 		case 13:
-			a = '1'
+			a = 49
 
 		}
 		z01.PrintRune(a)
