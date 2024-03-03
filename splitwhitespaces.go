@@ -8,9 +8,13 @@ func SplitWhiteSpaces(s string) []string {
 
 	for i, v := range arr {
 		if v == ' ' || i == len(arr)-1 {
-			retarr = append(retarr, string(arr[lastr:i]))
-			lastr = i + 1
-			count++
+			if i == len(arr)-1 {
+				retarr = append(retarr, string(arr[lastr:i+1]))
+			} else {
+				retarr = append(retarr, string(arr[lastr:i]))
+				lastr = i + 1
+				count++
+			}
 		}
 	}
 	return retarr
