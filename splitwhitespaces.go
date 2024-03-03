@@ -2,20 +2,17 @@ package piscine
 
 func SplitWhiteSpaces(s string) []string {
 	arr := []rune(s)
+	word := ""
 	retarr := []string{}
-	lastr := 0
-	count := 0
 
-	for i, v := range arr {
-		if v == ' ' || i == len(arr)-1 {
-			if i == len(arr)-1 {
-				retarr = append(retarr, string(arr[lastr:i+1]))
-			} else {
-				retarr = append(retarr, string(arr[lastr:i]))
-				lastr = i + 1
-				count++
-			}
+	for i := 0; i < len(s); i++ {
+		if arr[i] != ' ' && arr[i] != '\n' && arr[i] != '\t' {
+			word += string(arr[i])
+		} else if word != "" {
+			retarr = append(retarr, word)
+			word = ""
 		}
 	}
+	retarr = append(retarr, word)
 	return retarr
 }
