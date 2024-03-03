@@ -5,10 +5,12 @@ func MakeRange(min, max int) []int {
 		return nil
 	}
 
-	arr := make([]int, max)
+	size := max - min
+	arr := make([]int, size)
 
-	for i := min; i < max; i++ {
-		arr[i] = i
+	for i := range arr {
+		arr[i] = min + 1
 	}
-	return arr[min:]
+
+	return arr
 }
