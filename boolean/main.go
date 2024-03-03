@@ -22,7 +22,7 @@ func isEven(nbr int) bool {
 }
 
 func main() {
-	input := os.Args
+	input := os.Args[1:]
 
 	if isEven(len(input)) == true {
 		printStr("I have an even number of arguments")
