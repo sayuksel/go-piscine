@@ -53,6 +53,8 @@ func main() {
 		} else {
 			result = val1 % val2
 		}
+	default:
+		return
 	}
 
 	if err != "" {
