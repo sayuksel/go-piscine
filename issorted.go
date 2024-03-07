@@ -1,21 +1,24 @@
 package piscine
 
 func f(a, b int) int {
-	if b > a {
+	if a < b {
 		return 1
 	} else if a == b {
 		return 0
-	} else {
-		return -1
 	}
+	return -1
 }
 
 func IsSorted(f func(a, b int) int, a []int) bool {
-	retval := f(a[0], a[1])
+	l := len(a)
+	flag := true
 
-	if retval == 1 {
-		return true
-	} else {
-		return false
+	for i := 1; i < l; i++ {
+		if f(a[i-1], a[i]) == 1 && flag == true {
+			flag = true
+		} else {
+			flag = false
+		}
 	}
+	return flag
 }
