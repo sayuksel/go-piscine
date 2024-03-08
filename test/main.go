@@ -1,10 +1,7 @@
 package main
 
-import (
-	"fmt"
-	"piscine"
-)
+import "piscine"
 
 func main() {
-	fmt.Println(piscine.Capitalize("fgmttLu=O^^'0"))
+	piscine.DescendComb()
 }
